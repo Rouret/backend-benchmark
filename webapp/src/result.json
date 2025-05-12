@@ -1,0 +1,58 @@
+[
+  {
+    "testCase": {
+      "runCommand": "npm run start:prod",
+      "basePath": "nest-hello-world",
+      "name": "NestJs",
+      "url": "http://localhost:3000"
+    },
+    "metrics": {
+      "latency": 17.58,
+      "requestsPerSecond": 15521.99,
+      "bytesPerSecond": 3711959.04
+    },
+    "category": "Hello World"
+  },
+  {
+    "testCase": {
+      "runCommand": "bun run start",
+      "basePath": "elysia-hello-world",
+      "name": "ElysiaJs",
+      "url": "http://localhost:3000"
+    },
+    "metrics": {
+      "latency": 1.02,
+      "requestsPerSecond": 92480.4,
+      "bytesPerSecond": 11838423.04
+    },
+    "category": "Hello World"
+  },
+  {
+    "testCase": {
+      "runCommand": "npm run start:prod",
+      "basePath": "nest-input-validation",
+      "name": "NestJs",
+      "url": "http://localhost:3000"
+    },
+    "metrics": {
+      "latency": 30.6,
+      "requestsPerSecond": 11537.51,
+      "bytesPerSecond": 3649044.48
+    },
+    "category": "Input Validation"
+  },
+  {
+    "testCase": {
+      "runCommand": "bun run start",
+      "basePath": "elysia-hello-world",
+      "name": "ElysiaJs",
+      "url": "http://localhost:3000"
+    },
+    "metrics": {
+      "latency": 1.08,
+      "requestsPerSecond": 89834.94,
+      "bytesPerSecond": 11765022.72
+    },
+    "category": "Input Validation"
+  }
+]

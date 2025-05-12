@@ -1,0 +1,18 @@
+{
+  "name": "benchmark",
+  "private": true,
+  "workspaces": [
+    "nest-hello-world",
+    "elysia-hello-world",
+    "webapp"
+  ],
+  "scripts": {
+    "start:webapp": "cd webapp && npm run dev"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
