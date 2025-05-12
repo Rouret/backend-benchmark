@@ -7,9 +7,9 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 17.58,
-      "requestsPerSecond": 15521.99,
-      "bytesPerSecond": 3711959.04
+      "latency": 6.2,
+      "requestsPerSecond": 17981.47,
+      "bytesPerSecond": 4299161.6
     },
     "category": "Hello World"
   },
@@ -21,9 +21,9 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 1.02,
-      "requestsPerSecond": 92480.4,
-      "bytesPerSecond": 11838423.04
+      "latency": 1,
+      "requestsPerSecond": 96434.51,
+      "bytesPerSecond": 12341739.52
     },
     "category": "Hello World"
   },
@@ -35,9 +35,9 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 30.6,
-      "requestsPerSecond": 11537.51,
-      "bytesPerSecond": 3649044.48
+      "latency": 7.87,
+      "requestsPerSecond": 13947.83,
+      "bytesPerSecond": 4404019.2
     },
     "category": "Input Validation"
   },
@@ -49,9 +49,9 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 1.08,
-      "requestsPerSecond": 89834.94,
-      "bytesPerSecond": 11765022.72
+      "latency": 1.01,
+      "requestsPerSecond": 94675.75,
+      "bytesPerSecond": 12404654.08
     },
     "category": "Input Validation"
   }

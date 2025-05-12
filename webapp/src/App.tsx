@@ -123,7 +123,24 @@ function App() {
   return (
     <main>
       <div className="container">
-        <h1>Performance Comparison</h1>
+        <header className="app-header">
+          <div className="app-title">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2152/2152539.png"
+              alt="Benchmark Logo"
+              className="app-logo"
+            />
+            <h1>Web Framework Benchmark</h1>
+          </div>
+          <a
+            href="https://github.com/Rouret/backend-benchmark"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github-link"
+          >
+            <i className="fab fa-github"></i> View on GitHub
+          </a>
+        </header>
 
         <div className="tabs">
           {categories.map((category) => (

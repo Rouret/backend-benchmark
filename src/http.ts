@@ -1,5 +1,5 @@
 export const httpTestRunner = async (basePath: string, url: string, customScript?: string): Promise<string[]> => {
-    const args = ["wrk", "-t8", "-c100", "-d10s"];
+    const args = ["wrk", "-t8", "-c100", "-d30s"];
 
     if (customScript) {
         args.push(`-s`);

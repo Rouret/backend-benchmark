@@ -238,3 +238,54 @@ tr {
   margin-right: 0.5rem;
   font-size: 1.2rem;
 }
+
+/* Styles pour le header */
+.app-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.app-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: var(--secondary-color);
+  font-size: 2.2rem;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.github-link:hover {
+  background-color: #34495e;
+}
+
+.github-link i {
+  font-size: 1.2rem;
+}
