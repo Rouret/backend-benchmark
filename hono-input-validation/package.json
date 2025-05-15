@@ -1,0 +1,14 @@
+{
+  "name": "hono-input-validation",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "hono": "latest",
+    "zod": "latest",
+    "@hono/zod-validator": "latest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

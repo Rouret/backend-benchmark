@@ -1,0 +1,12 @@
+{
+  "name": "hono-hello-world",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "hono": "latest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
