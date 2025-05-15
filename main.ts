@@ -17,7 +17,13 @@ const TESTS: Test = {
                 url: "http://localhost:3000",
                 basePath: "elysia-hello-world",
                 runCommand: "bun run start",
-            }
+            },
+            {
+                name: "Hono",
+                url: "http://localhost:3000",
+                basePath: "hono-hello-world",
+                runCommand: "bun run dev",
+            },
         ],
     },
     "Input Validation": {
@@ -34,7 +40,13 @@ const TESTS: Test = {
                 url: "http://localhost:3000",
                 basePath: "elysia-hello-world",
                 runCommand: "bun run start",
-            }
+            },
+            {
+                name: "Hono",
+                url: "http://localhost:3000",
+                basePath: "hono-input-validation",
+                runCommand: "bun run dev",
+            },
         ],
         customScript: "post-input-validation.lua"
     }
