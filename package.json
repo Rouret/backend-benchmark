@@ -4,6 +4,7 @@
   "workspaces": [
     "nest-hello-world",
     "elysia-hello-world",
+    "hono-hello-world",
     "webapp"
   ],
   "scripts": {
