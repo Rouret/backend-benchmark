@@ -1,23 +1,76 @@
 # Web Framework Benchmark
 
-![Webapp](./docs/webapp.png "Webapp")
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-20.x-green.svg)](https://nodejs.org)
+[![Bun](https://img.shields.io/badge/Bun-1.0-orange.svg)](https://bun.sh)
 
-A simple tool to compare performance metrics of different web frameworks.
+<img src="./docs/webapp.png" alt="Webapp" width="600"/>
 
-## 🤖 AI-Generated Webpp
+A comprehensive tool for comparing performance metrics across different web frameworks.
 
-https://backend-benchmark-webapp.vercel.app/
+## 🌐 Live Demo
 
-## 📊 What It Does
+Check out our AI-powered web application:
+[https://backend-benchmark-webapp.vercel.app/](https://backend-benchmark-webapp.vercel.app/)
 
-- Benchmarks web frameworks (ElysiaJS and NestJS)
-- Visualizes results (webapp)
-- Ranks frameworks by performance metrics (webapp)
-- Shows relative performance between frameworks (webapp)
+## 📊 Features
 
-## 🛠️ Frameworks Tested
+- Comprehensive benchmarking of web frameworks (ElysiaJS and NestJS)
+- Interactive data visualization
+- Performance metrics comparison
+- Real-time framework ranking
+- Relative performance analysis
 
-- **[NestJs](https://nestjs.com/)** - "A progressive Node.js framework for building efficient, reliable and scalable server-side applications."
-- **[ElysiaJs](https://elysiajs.com)** - "Ergonomic Framework for Humans
-  TypeScript with End-to-End Type Safety, type integrity, and exceptional developer experience. Supercharged by Bun."
-- **[Hono](https://hono.dev/)** - "Web application framework Fast, lightweight, built on Web Standards. Support for any JavaScript runtime." (ty @marek-e !)
+## 🚀 Prerequisites
+
+Required tools to run this project:
+
+- **[Node.js](https://nodejs.org/)** (v20.x or higher)
+- **[Bun](https://bun.sh/)**
+- **[npm](https://www.npmjs.com/)**
+
+Quick setup:
+
+```bash
+# Install Bun (macOS and Linux)
+curl -fsSL https://bun.sh/install | bash
+
+# Verify installations
+node --version
+bun --version
+```
+
+## 🛠️ Supported Frameworks
+
+- **[NestJS](https://nestjs.com/)** - A progressive Node.js framework for building efficient, reliable, and scalable server-side applications.
+- **[ElysiaJS](https://elysiajs.com)** - An ergonomic framework for humans with end-to-end type safety and exceptional developer experience. Powered by Bun.
+- **[Hono](https://hono.dev/)** - A fast, lightweight web framework built on Web Standards, supporting any JavaScript runtime. (Thanks @marek-e!)
+
+## 📝 How to Contribute
+
+1. Initialize your project in the root folder following the pattern: `$frameworkName-$usecase`  
+   Example for NestJS hello world implementation:
+   [nest-hello-world](./nest-hello-world/)
+
+2. Add your test configuration in [config.ts](./config.ts):
+
+```typescript
+"Hello World": {
+    testCases: [
+        {
+            name: "NestJS",
+            url: "http://localhost:3000",
+            basePath: "nest-hello-world", // The folder name
+            setupCommand: "npm run build", // Optional setup command
+            runCommand: "npm run start:prod", // The run command
+        },
+    ],
+},
+```
+
+3. Run
+
+```typescript
+bun run main.ts
+```

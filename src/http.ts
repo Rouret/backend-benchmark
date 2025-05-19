@@ -1,4 +1,4 @@
-import { TestConfig } from "../main";
+import { TestConfig } from "../config";
 
 export const httpTestRunner = async (basePath: string, url: string, customScript?: string): Promise<string[]> => {
     const args = ["wrk", `-t${TestConfig.nbThreads}`, `-c${TestConfig.nbConnections}`, `-d${TestConfig.duration}s`];
