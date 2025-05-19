@@ -17,7 +17,13 @@ const TESTS: Test = {
                 url: "http://localhost:3000",
                 basePath: "elysia-hello-world",
                 runCommand: "bun run start",
-            }
+            },
+            {
+                name: "Hono",
+                url: "http://localhost:3000",
+                basePath: "hono-hello-world",
+                runCommand: "bun run dev",
+            },
         ],
     },
     "Input Validation": {
@@ -34,10 +40,22 @@ const TESTS: Test = {
                 url: "http://localhost:3000",
                 basePath: "elysia-hello-world",
                 runCommand: "bun run start",
-            }
+            },
+            {
+                name: "Hono",
+                url: "http://localhost:3000",
+                basePath: "hono-input-validation",
+                runCommand: "bun run dev",
+            },
         ],
         customScript: "post-input-validation.lua"
     }
+}
+
+export const TestConfig = {
+    duration: 30,
+    nbThreads: 8,
+    nbConnections: 100,
 }
 
 const runTestCase = async (testCase: TestCase, category: string, customScript?: string): Promise<TestResult | null> => {
@@ -76,6 +94,11 @@ const runAllTests = async () => {
     return allResults;
 }
 
-const result = await runAllTests()
+const numberOfTests = Object.keys(TESTS).reduce((acc, category) => acc + (TESTS[category]?.testCases?.length || 0), 0);
+const estimatedTimes = numberOfTests * TestConfig.duration;
+
+logger.info(`Minimum time to run all tests: ${estimatedTimes} seconds`);
+
+const result = await runAllTests();
 
 Bun.write("./webapp/src/result.json", JSON.stringify(result, null, 2));

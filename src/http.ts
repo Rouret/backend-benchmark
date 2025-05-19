@@ -1,9 +1,12 @@
+import { TestConfig } from "../main";
+
 export const httpTestRunner = async (basePath: string, url: string, customScript?: string): Promise<string[]> => {
-    const args = ["wrk", "-t8", "-c100", "-d30s"];
+    const args = ["wrk", `-t${TestConfig.nbThreads}`, `-c${TestConfig.nbConnections}`, `-d${TestConfig.duration}s`];
+    const currentDir = import.meta.dir;
 
     if (customScript) {
         args.push(`-s`);
-        args.push(`/Users/lucasrouret/Documents/lab/benchmark/scripts/${customScript}`);
+        args.push(`${currentDir}/../scripts/${customScript}`);
     }
 
     args.push(url);
