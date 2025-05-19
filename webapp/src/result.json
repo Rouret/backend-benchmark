@@ -7,9 +7,9 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 6.2,
-      "requestsPerSecond": 17981.47,
-      "bytesPerSecond": 4299161.6
+      "latency": 6.07,
+      "requestsPerSecond": 17086.48,
+      "bytesPerSecond": 4078960.64
     },
     "category": "Hello World"
   },
@@ -21,9 +21,23 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 1,
-      "requestsPerSecond": 96434.51,
-      "bytesPerSecond": 12341739.52
+      "latency": 1.06,
+      "requestsPerSecond": 90989.89,
+      "bytesPerSecond": 11649679.36
+    },
+    "category": "Hello World"
+  },
+  {
+    "testCase": {
+      "runCommand": "bun run dev",
+      "basePath": "hono-hello-world",
+      "name": "Hono",
+      "url": "http://localhost:3000"
+    },
+    "metrics": {
+      "latency": 1.13,
+      "requestsPerSecond": 86588.48,
+      "bytesPerSecond": 10999562.24
     },
     "category": "Hello World"
   },
@@ -35,9 +49,9 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 7.87,
-      "requestsPerSecond": 13947.83,
-      "bytesPerSecond": 4404019.2
+      "latency": 8.82,
+      "requestsPerSecond": 12513.62,
+      "bytesPerSecond": 3953131.52
     },
     "category": "Input Validation"
   },
@@ -49,9 +63,23 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 1.01,
-      "requestsPerSecond": 94675.75,
-      "bytesPerSecond": 12404654.08
+      "latency": 1.05,
+      "requestsPerSecond": 91148.88,
+      "bytesPerSecond": 11943280.64
+    },
+    "category": "Input Validation"
+  },
+  {
+    "testCase": {
+      "runCommand": "bun run dev",
+      "basePath": "hono-input-validation",
+      "name": "Hono",
+      "url": "http://localhost:3000"
+    },
+    "metrics": {
+      "latency": 1.53,
+      "requestsPerSecond": 62823.06,
+      "bytesPerSecond": 11555307.52
     },
     "category": "Input Validation"
   }

@@ -1,5 +1,7 @@
+import { TestConfig } from "../main";
+
 export const httpTestRunner = async (basePath: string, url: string, customScript?: string): Promise<string[]> => {
-    const args = ["wrk", "-t8", "-c100", "-d30s"];
+    const args = ["wrk", `-t${TestConfig.nbThreads}`, `-c${TestConfig.nbConnections}`, `-d${TestConfig.duration}s`];
     const currentDir = import.meta.dir;
 
     if (customScript) {
