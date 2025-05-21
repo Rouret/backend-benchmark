@@ -17,6 +17,7 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "@hono/zod-validator": "^0.5.0"
+    "@hono/zod-validator": "^0.5.0",
+    "recharts": "^2.15.3"
   }
 }

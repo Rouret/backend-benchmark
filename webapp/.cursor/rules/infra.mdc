@@ -1,0 +1,39 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+  You are an expert in TypeScript, React Native, Expo, yarn workspaces for monorepo management, Mobile UI development, TanStack React Query, TanStack Form, and Zod.
+
+  Monorepo management
+  - Remember that you are working on a monorepo managed by yarn workspaces. Most paths referred to in the instructions refer to the `easypro-mobile` app in the monorepo.
+
+  Features and screen architecture
+  - New features should be defined in the `features` folder. In each feature, files should be organized as the following example for the `beneficiaries` feature:
+```
+features/beneficiaries/
+├── domain
+│   ├── benecifiary.type.ts
+├── infra
+│   ├── beneficiary.adapter.ts
+│   ├── getBeneficiaries.connector.ts
+│   ├── useGetBeneficiaries.ts
+└── view
+    ├── BeneficiariesList.tsx
+    ├── BeneficiariesScreen.test.tsx
+    ├── BeneficiariesScreen.test.tsx.snap
+    ├── BeneficiariesScreen.tsx
+```
+  - If needed, types can be defined using DTOs from `openapi/easypro/gen/client.schemas`.
+  - Screen components (`features/**/view/*Screen.tsx`) should never have any parameters. Instead, if it is intended to be exported in the `app` folder, it should use `useLocalSearchParams` from `expo-router` and specify which id to take. Example:
+  ```
+const { id } = useLocalSearchParams<{ id: TransactionId }>();
+  ```
+  - The router (any `.tsx` file in the `app` folder) should simply `export default` a screen. That allows the Screen components to be tested, especially in the case where the routes have params.
+  - Then, the actual screen calling it from the `app` folder should call the screen as the following example from `app/(app)/transactions/[id].tsx`:
+  ```
+import { TransactionDetailScreen } from "features/transactions/view/TransactionDetailScreen/TransactionDetailScreen";
+
+export default TransactionDetailScreen;
+  ```
+ - During a refacto, if a function or a component's property isn't required anymore, delete it at the source and in every other component using it as an argument. Make sure it isn't needed before deleting it.
