@@ -89,7 +89,7 @@ function App() {
     if (rank === 1) return "🥇 ";
     if (rank === 2) return "🥈 ";
     if (rank === 3) return "🥉 ";
-    return `#${rank} `;
+    return "";
   };
 
   // Calculate comparison ratios relative to the selected framework
@@ -109,14 +109,15 @@ function App() {
 
     if (higherIsBetter) {
       ratio = value / referenceValue;
-      isImprovement = value > referenceValue;
+      isImprovement = ratio > 1;
     } else {
-      ratio = referenceValue / value;
-      isImprovement = value < referenceValue;
+      // Pour la latence, on inverse le ratio pour avoir une logique cohérente
+      ratio = value / referenceValue;
+      isImprovement = ratio < 1;
     }
 
     // Format the ratio with + for improvements, - for regressions
-    const formattedRatio = ratio.toFixed(1);
+    const formattedRatio = (isImprovement ? ratio : 1 / ratio).toFixed(1);
     return isImprovement ? `+${formattedRatio}x` : `-${formattedRatio}x`;
   };
 
