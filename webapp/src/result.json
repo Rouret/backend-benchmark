@@ -7,9 +7,9 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 6.07,
-      "requestsPerSecond": 17086.48,
-      "bytesPerSecond": 4078960.64
+      "latency": 6.2,
+      "requestsPerSecond": 16730.16,
+      "bytesPerSecond": 3995074.56
     },
     "category": "Hello World"
   },
@@ -21,9 +21,9 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 1.06,
-      "requestsPerSecond": 90989.89,
-      "bytesPerSecond": 11649679.36
+      "latency": 0.99,
+      "requestsPerSecond": 97272.9,
+      "bytesPerSecond": 12446597.12
     },
     "category": "Hello World"
   },
@@ -35,9 +35,23 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 1.13,
-      "requestsPerSecond": 86588.48,
-      "bytesPerSecond": 10999562.24
+      "latency": 1.04,
+      "requestsPerSecond": 91852.91,
+      "bytesPerSecond": 11660165.12
+    },
+    "category": "Hello World"
+  },
+  {
+    "testCase": {
+      "runCommand": "encore run",
+      "basePath": "encore-hello-world",
+      "name": "Encore",
+      "url": "http://localhost:4000"
+    },
+    "metrics": {
+      "latency": 7.73,
+      "requestsPerSecond": 8506.39,
+      "bytesPerSecond": 4068474.88
     },
     "category": "Hello World"
   },
@@ -49,9 +63,9 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 8.82,
-      "requestsPerSecond": 12513.62,
-      "bytesPerSecond": 3953131.52
+      "latency": 8.48,
+      "requestsPerSecond": 12864.26,
+      "bytesPerSecond": 4068474.88
     },
     "category": "Input Validation"
   },
@@ -63,9 +77,9 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 1.05,
-      "requestsPerSecond": 91148.88,
-      "bytesPerSecond": 11943280.64
+      "latency": 1.07,
+      "requestsPerSecond": 89936.58,
+      "bytesPerSecond": 11785994.24
     },
     "category": "Input Validation"
   },
@@ -77,9 +91,9 @@
       "url": "http://localhost:3000"
     },
     "metrics": {
-      "latency": 1.53,
-      "requestsPerSecond": 62823.06,
-      "bytesPerSecond": 11555307.52
+      "latency": 1.42,
+      "requestsPerSecond": 67954.86,
+      "bytesPerSecond": 12499025.92
     },
     "category": "Input Validation"
   }

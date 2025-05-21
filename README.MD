@@ -7,12 +7,17 @@
 
 <img src="./docs/webapp.png" alt="Webapp" width="600"/>
 
-A comprehensive tool for comparing performance metrics across different web frameworks.
+A comprehensive tool for comparing performance metrics across different web frameworks (Javascript).
 
 ## 🌐 Live Demo
 
 Check out our AI-powered web application:
 [https://backend-benchmark-webapp.vercel.app/](https://backend-benchmark-webapp.vercel.app/)
+
+## Want to add new test ?
+
+- [📝 How to Contribute](#contribute)
+- OR create an issue i will do it
 
 ## 📊 Features
 
@@ -28,6 +33,7 @@ Required tools to run this project:
 
 - **[Node.js](https://nodejs.org/)** (v20.x or higher)
 - **[Bun](https://bun.sh/)**
+- **[Encore](https://encore.dev/)**
 - **[npm](https://www.npmjs.com/)**
 
 Quick setup:
@@ -46,6 +52,10 @@ bun --version
 - **[NestJS](https://nestjs.com/)** - A progressive Node.js framework for building efficient, reliable, and scalable server-side applications.
 - **[ElysiaJS](https://elysiajs.com)** - An ergonomic framework for humans with end-to-end type safety and exceptional developer experience. Powered by Bun.
 - **[Hono](https://hono.dev/)** - A fast, lightweight web framework built on Web Standards, supporting any JavaScript runtime. (Thanks @marek-e!)
+- **[Encore](https://encore.dev/)** - Open Source TypeScript Backend Framework
+  for robust type-safe applications
+
+<section id="contribute"></section>
 
 ## 📝 How to Contribute
 

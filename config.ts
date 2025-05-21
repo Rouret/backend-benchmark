@@ -29,6 +29,12 @@ export const TESTS: Test = {
                 basePath: "hono-hello-world",
                 runCommand: "bun run dev",
             },
+            {
+                name: "Encore",
+                url: "http://localhost:4000",
+                basePath: "encore-hello-world",
+                runCommand: "encore run",
+            },
         ],
     },
     "Input Validation": {
